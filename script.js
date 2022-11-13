@@ -77,3 +77,4 @@ function weatherDetails(info){
 arrowBack.addEventListener("click", ()=>{
     wrapper.classList.remove("active");
 });
+
