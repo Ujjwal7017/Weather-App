@@ -50,17 +50,17 @@ function weatherDetails(info){
         const {description, id} = info.weather[0];
         const {temp, feels_like, humidity} = info.main;
         if(id == 800){
-            wIcon.src = "sun.png";
+            wIcon.src = ".icons/sun.png";
         }else if(id >= 200 && id <= 232){
-            wIcon.src = "thunderstorm.png";  
+            wIcon.src = ".icons/thunderstorm.png";  
         }else if(id >= 600 && id <= 622){
-            wIcon.src = "snowman.png";
+            wIcon.src = ".icons/snowman.png";
         }else if(id >= 701 && id <= 781){
-            wIcon.src = "clouds.png";
+            wIcon.src = ".icons/clouds.png";
         }else if(id >= 801 && id <= 804){
-            wIcon.src = "cloudy.png";
+            wIcon.src = ".icons/cloudy.png";
         }else if((id >= 500 && id <= 531) || (id >= 300 && id <= 321)){
-            wIcon.src = "heavy-rain.png";
+            wIcon.src = ".icons/heavy-rain.png";
         }
         
         weatherPart.querySelector(".temp .numb").innerText = Math.floor(temp);
